@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="xalx.js">
+    <style>
+        .Calc {
+            padding: 20px 30px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        #num1, #num2 {
+            padding: 10px;
+            text-align: center;
+            width: 50%;
+            margin: 20px 0;
+            font-size: 17px;
+            background-color: antiquewhite;
+        }
+
+        .button {
+            padding: 15px;
+            width: 10%;
+            margin: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="Calc">
+        <h2>Calculator</h2>
+        <input type="number" id="num1" placeholder="Enter First number Here....">
+        <input type="number" id="num2" placeholder="Enter Second number Here....">
+        <button onclick="calculate('+')" class="button">+</button>
+        <button onclick="calculate('-')" class="button">-</button>
+        <button onclick="calculate('*')" class="button">*</button>
+        <button onclick="calculate('/')" class="button">/</button>
+        <h2>Result : <span id="result">0</span></h2>
+    </div>
+
+        <script src="xalx.js"></script>
+</body>
+</html>
